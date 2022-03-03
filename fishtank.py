@@ -49,7 +49,7 @@ class FishTank(tk.Tk):
   def __init__(self):
     tk.Tk.__init__(self)
     
-    # reference a png to use as teh backround image
+    # reference a png to use as teh background image
     dirname = os.path.dirname(__file__)
     print(dirname)
     tank_picture = os.path.join(dirname, 'tank.PNG')
@@ -60,7 +60,7 @@ class FishTank(tk.Tk):
 
     self.background = tk.Label(self, image=self.image_tank)
     self.background.image = self.image_tank  
-    self.background = tk.Label(self, background="aqua") # debug only
+    #self.background = tk.Label(self, background="aqua") # debug only
     self.background.pack(fill="both", expand=True)
 
     self.frame_info = tk.Frame(self.background, background="white")
